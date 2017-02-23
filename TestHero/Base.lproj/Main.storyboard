@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h7s-po-hmj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Yav-zw-3oT">
+            <objects>
+                <navigationController id="h7s-po-hmj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2PM-FZ-KBu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rzs-2B-5EW" kind="relationship" relationship="rootViewController" id="9iJ-h2-QLL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNw-6w-nyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-649" y="159"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wrO-rj-iK5">
+            <objects>
+                <viewController id="rzs-2B-5EW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fhP-QB-0zw"/>
+                        <viewControllerLayoutGuide type="bottom" id="tV0-o2-0IM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GI3-dr-K65">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcS-fM-DhH">
+                                <rect key="frame" x="112" y="283.5" width="150" height="100"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kDc-NK-TgX"/>
+                                    <constraint firstAttribute="width" constant="150" id="z4j-pw-AHb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="my_view"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoD-B9-45N">
+                                <rect key="frame" x="164" y="607" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="nextButton"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="translate(0,100) fade"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Vsy-Mr-mVq" kind="show" id="hMt-Tn-DIo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JoD-B9-45N" firstAttribute="centerX" secondItem="GI3-dr-K65" secondAttribute="centerX" id="2vC-qD-6oh"/>
+                            <constraint firstItem="vcS-fM-DhH" firstAttribute="centerY" secondItem="GI3-dr-K65" secondAttribute="centerY" id="LvS-nb-mja"/>
+                            <constraint firstItem="vcS-fM-DhH" firstAttribute="centerX" secondItem="GI3-dr-K65" secondAttribute="centerX" id="Oyd-mx-lav"/>
+                            <constraint firstItem="tV0-o2-0IM" firstAttribute="top" secondItem="JoD-B9-45N" secondAttribute="bottom" constant="30" id="Qve-HD-m2p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Rk-Vo-Fz2"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjz-wc-MOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="159"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WYc-Ws-CXs">
+            <objects>
+                <viewController id="Vsy-Mr-mVq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="asc-gC-0kb"/>
+                        <viewControllerLayoutGuide type="bottom" id="FNE-qK-Clu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6lM-Pt-xhd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8H-zD-B9V">
+                                <rect key="frame" x="112" y="91" width="150" height="200"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5mq-1i-U3s"/>
+                                    <constraint firstAttribute="width" constant="150" id="s6Q-Av-BrM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="my_view"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H8H-zD-B9V" firstAttribute="top" secondItem="asc-gC-0kb" secondAttribute="bottom" constant="27" id="SYY-du-dcq"/>
+                            <constraint firstItem="H8H-zD-B9V" firstAttribute="centerX" secondItem="6lM-Pt-xhd" secondAttribute="centerX" id="nzL-Tm-gOI"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XxL-sl-d8X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="159"/>
+        </scene>
+    </scenes>
+</document>
